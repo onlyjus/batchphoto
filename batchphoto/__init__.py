@@ -18,13 +18,14 @@ __version__ = '.'.join(map(str, version_info))
 __license__ = 'Licensed under the terms of the MIT License'
 __project_url__ = 'https://github.com/onlyjus/batchphoto'
 
+# dynamic import
 basedir = dirname(__file__)
 __all__ = []
 for name in glob(join(basedir, '*/__init__.py')):
     dir_ = dirname(name)
     module = splitext(split(dir_)[-1])[0]
     try:
-        __import__('batchphoto.'+module)
+        __import__('batchphoto.' + module)
     except:
         warnings.warn('Exception while loading {}. Ignoring.\n'.format(module))
         traceback.print_exc()
