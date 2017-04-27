@@ -1,7 +1,7 @@
 from setuptools import setup
 
 def readme():
-    with open('README.md') as f:
+    with open('README.rst') as f:
         return f.read()
 
 setup(name='batchphoto',
@@ -10,7 +10,7 @@ setup(name='batchphoto',
       long_description=readme(),
       classifiers=[
         'Development Status :: 4 - Beta',
-        'LLicense :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 3',
@@ -18,6 +18,7 @@ setup(name='batchphoto',
       ],
       keywords='image processing batch',
       url='https://github.com/onlyjus/batchphoto',
+      download_url = 'https://github.com/onlyjus/batchphoto/archive/0.1.tar.gz',
       author='Justin Weber',
       author_email='onlyjus@gmail.com',
       license='MIT',
