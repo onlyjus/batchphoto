@@ -12,7 +12,7 @@ from os.path import dirname, join, split, splitext
 import warnings
 import traceback
 
-version_info = (0, 0, 1, "dev0")
+version_info = (0, 1, "dev0")
 
 __version__ = '.'.join(map(str, version_info))
 __license__ = 'Licensed under the terms of the MIT License'

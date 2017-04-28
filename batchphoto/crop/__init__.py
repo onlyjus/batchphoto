@@ -19,7 +19,6 @@ for name in glob(join(basedir, '*.py')):
     module = splitext(split(name)[-1])[0]
     if module in ['__main__', '__init__']:
         continue
-    print(module)
     try:
         __import__('batchphoto.crop.' + module)
     except:

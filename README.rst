@@ -15,14 +15,22 @@ Installation
 
 .. code-block:: bash
 
-    $ pip install twine
+    $ pip install batchphoto
 
 
 Usage
 -----
 
-1. Auto crop and image(s) with a face:
+1. Resize images to either an aspect ratio (5a7) or specific pixel dimensions
+   (1920p1080):
 
   .. code-block:: bash
 
-      $ batchphoto crop face *.jpg output
+    $ batchphoto crop resize -i *.jpg -o output -r 5a7 4a6 1920p1080
+
+
+2. Auto crop and image(s) with a face:
+
+  .. code-block:: bash
+
+      $ batchphoto crop face -i *.jpg -o output

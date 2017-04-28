@@ -1,11 +1,12 @@
 from setuptools import setup
+from batchphoto import __version__
 
 def readme():
     with open('README.rst') as f:
         return f.read()
 
 setup(name='batchphoto',
-      version='0.1',
+      version=__version__,
       description='Python library for batch processing of photos',
       long_description=readme(),
       classifiers=[
